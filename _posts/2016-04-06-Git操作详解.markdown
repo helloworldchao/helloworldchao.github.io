@@ -2,64 +2,62 @@
 layout: post
 title:  "Git操作详解"
 date:   2016-04-06 19:58:36 +0800
-categories: Git
+categories: > git
 permalink: /archivers/git
 ---
 
 # 工作流程
 
-```
-git init //建立仓库
-git add [filename] //add命令提交新文件到stage工作区
-git add [filename] //add命令提交新文件到stage工作区
-git commit -m "[your commit]" //commit命令解释新提交的文件
-git push //如果存在核心服务器，则推送至核心服务器与他人共享文件
-```
+> git init //建立仓库
+> git add [filename] //add命令提交新文件到stage工作区
+> git add [filename] //add命令提交新文件到stage工作区
+> git commit -m "[your commit]" //commit命令解释新提交的文件
+> git push //如果存在核心服务器，则推送至核心服务器与他人共享文件
+
 
 # 查询
-```
-it status //查询状态
-git diff //查询修改的具体内容
-git log //查询git的日志 (--pretty=oneline)若日志过多可添加此参数使其显示在一行
-git reflog //查询所有用过的命令
-git log --graph //查询分支合并图
-```
+
+> git status //查询状态
+> git diff //查询修改的具体内容
+> git log //查询> git的日志 (--pretty=oneline)若日志过多可添加此参数使其显示在一行
+> git reflog //查询所有用过的命令
+> git log --graph //查询分支合并图
+
 
 # 撤销修改
-```
-git checkout -- [filename] //撤销自己所做的修改,或回到git add,git commit命令提交的状态
-git reset HEAD [filename] //撤销add的影响
-```
+
+> git checkout -- [filename] //撤销自己所做的修改,或回到> git add,> git commit命令提交的状态
+> git reset HEAD [filename] //撤销add的影响
+
 
 # 代码回滚
-```
-git reset --hard [commit id] //回滚到指定版本, commit id 可只填写前面的一部分
-git reset --hard HEAD^ //回滚一个版本
-git reset --hard HEAD^^ //回滚两个版本
-git reset --hard HEAD~100 //回滚100个版本
-```
+
+> git reset --hard [commit id] //回滚到指定版本, commit id 可只填写前面的一部分
+> git reset --hard HEAD^ //回滚一个版本
+> git reset --hard HEAD^^ //回滚两个版本
+> git reset --hard HEAD~100 //回滚100个版本
+
 
 # 分支操作
-```
-git branch [branch name] //创建分支
-git checkout [branch name] //切换分支
-git branch //查看所在分支
-git merge [branch name] //合并分支（有冲突首先解决冲突）
-git merge --no-ff -m "[yout commit]" //在merge同时创建一个commit可以在git log --graph上查询merge的历史记录
-git branch -d [branch name] //删除分支
-git branch -D [branch name] //强制删除未合并的分支
-git stash //保存修改的内容存入栈中
-git stash list //查看stash内容
-git stash apply [可选是否指定恢复某个内容] //恢复工作内容但是不删除栈中的内容
-git stash drop //删除栈中的内容
-git stash pop [可选是否指定恢复某个内容] //恢复工作内容同时删除栈中的内容
-```
+
+> git branch [branch name] //创建分支
+> git checkout [branch name] //切换分支
+> git branch //查看所在分支
+> git merge [branch name] //合并分支（有冲突首先解决冲突）
+> git merge --no-ff -m "[yout commit]" //在merge同时创建一个commit可以在> git log --graph上查询merge的历史记录
+> git branch -d [branch name] //删除分支
+> git branch -D [branch name] //强制删除未合并的分支
+> git stash //保存修改的内容存入栈中
+> git stash list //查看stash内容
+> git stash apply [可选是否指定恢复某个内容] //恢复工作内容但是不删除栈中的内容
+> git stash drop //删除栈中的内容
+> git stash pop [可选是否指定恢复某个内容] //恢复工作内容同时删除栈中的内容
+
 
 # 标签管理
-```
-git tag [tag name] [可选commit版本] //创建一个标签（默认标签是打在最新提交的commit上的）
-git show [tag name] //查看标签信息
-git tag -a [tag name] -m "[yout commit]" [可选commit版本] //在指定的commit版本上创建一个带有说明信息的标签
-git tag -s [tag name] -m "[yout commit]" [可选commit版本] //在指定的commit版本上创建一个带有说明信息的PGP签名标签
-git tag -d [tag name] //删除标签
-```
+
+> git tag [tag name] [可选commit版本] //创建一个标签（默认标签是打在最新提交的commit上的）
+> git show [tag name] //查看标签信息
+> git tag -a [tag name] -m "[yout commit]" [可选commit版本] //在指定的commit版本上创建一个带有说明信息的标签
+> git tag -s [tag name] -m "[yout commit]" [可选commit版本] //在指定的commit版本上创建一个带有说明信息的PGP签名标签
+> git tag -d [tag name] //删除标签
