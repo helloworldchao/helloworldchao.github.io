@@ -1,14 +1,32 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: helloworldchao
+url: "http://helloworldchao.github.io"
+baseurl: ""
+description: > helloworldchao的个人博客
+
+# Your information
+email: helloworldchao@outlook.com
+author: helloworldchao
+avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+profile: Android开发者/Google粉
+weibo_username: dragonyc
+github_username:  helloworldchao
+
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+permalink: /archivers/:title
+gems:
+ - jekyll-paginate
+ - jekyll-gist
 
 # Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
