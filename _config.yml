@@ -14,7 +14,7 @@ weibo_username: dragonyc
 github_username:  helloworldchao
 
 #disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
-#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+duoshuo_shortname: helloworldchao  # get one: http://duoshuo.com/create-site/
 
 permalink: /archivers/:title
 gems:
