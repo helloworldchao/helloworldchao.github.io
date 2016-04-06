@@ -1,9 +1,9 @@
 # Site settings
-title: helloworldchao
+title: helloworldchao的博客
 url: "http://helloworldchao.github.io"
 baseurl: ""
 description: > 
-    helloworldchao的个人博客
+    helloworldchao的博客
 
 # Your information
 email: helloworldchao@outlook.com
