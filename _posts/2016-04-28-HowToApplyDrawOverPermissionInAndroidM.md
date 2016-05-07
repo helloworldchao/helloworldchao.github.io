@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "关于某些权限在Android6.0及以上的申请方式"
+title:  "应用弹窗悬浮权限在Android6.0上的申请方式"
 date:   2016-04-28 21:15:00 +0800
 categories: Android
-permalink: /archivers/HowToApplySomePermissionAboveAndroidM
+permalink: /archivers/HowToApplyDrawOverPermissionInAndroidM
 ---
 
 # 问题介绍
