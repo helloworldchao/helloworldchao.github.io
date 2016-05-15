@@ -150,18 +150,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //发送广播
-        localReceiver = new LocalReceiver();
-        LocalBroadcastManager manager = LocalBroadcastManager.getInstance(this);
-        Intent intent = new Intent("com.chao.broadcasttest3.BROADCAST");
-        manager.sendBroadcast(intent);
-
+        manager = LocalBroadcastManager.getInstance(this);
 
         //注册并接受广播
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("com.chao.broadcasttest3.BROADCAST");
         localReceiver= new LocalReceiver();
         manager.registerReceiver(localReceiver, intentFilter);
+
+        //发送广播
+        localReceiver = new LocalReceiver();
+        Intent intent = new Intent("com.chao.broadcasttest3.BROADCAST");
+        manager.sendBroadcast(intent);
+
     }
 
     @Override
@@ -171,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         manager.unregisterReceiver(localReceiver);
     }
 
-    class LocalReceiver extends BroadcastReceiver {
+    public class LocalReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
             Toast.makeText(context, "received in Local", Toast.LENGTH_SHORT).show();
