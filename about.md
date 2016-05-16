@@ -9,9 +9,10 @@ public: true
 
 * Google爱好者
 * Android初级进阶中
+* 刺客粉
 
 ## 自带技能
 * Android/Java/html/css
 * SQLite/MySQL/SQL Server
-* Json/xml/RestAPI
-* Git
+* JSON/XML/RestAPI
+* Git/Vim

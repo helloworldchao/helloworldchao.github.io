@@ -1,3 +1,5 @@
 # helloworldchao的博客
 
-本网站使用了[laobubu](http://laobubu.net)的主题：[EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)
+这是我的个人博客，用来记录平时学习的一些问题和总结。
+
+本博客主要使用了[laobubu](http://laobubu.net)的主题：[EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)并对其做了部分修改。

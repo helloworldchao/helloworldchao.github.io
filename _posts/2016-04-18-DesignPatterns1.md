@@ -2,7 +2,7 @@
 layout: post
 title:  "设计模式（一）（设计模式原则）"
 date:   2016-04-18 21:00:00 +0800
-categories: DesignPatterns1
+categories: DesignPatterns
 permalink: /archivers/DesignPatterns
 ---
 
