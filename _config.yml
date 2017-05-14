@@ -15,7 +15,6 @@ profile: Android开发者
 github_username:  helloworldchao
 
 #disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
-duoshuo_shortname: helloworldchao  # get one: http://duoshuo.com/create-site/
 
 permalink: /archivers/:title
 gems:
