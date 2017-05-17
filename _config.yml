@@ -14,7 +14,8 @@ profile: Android开发者
 #weibo_username: dragonyc
 github_username:  helloworldchao
 
-#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#网易云跟帖不注释即激活
+wangyiyun_gentie: ok
 
 permalink: /archivers/:title
 gems:
