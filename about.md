@@ -1,11 +1,10 @@
 ---
 layout: page
-title: 关于我
+title: 关于
 permalink: /about/
 public: true
 ---
-
-### 介绍一下自己吧
+### 关于我
 
 * Android开发者
 * 半个后台/半个前端
@@ -15,7 +14,7 @@ public: true
 * 提升技术，努力赚钱
 * 立志成为一名独立开发者或者能够从事远程工作哈哈哈
 
-### 怎么找到我呢
+### 联系我
 
-<h4 align = "center">个人微信号，添加好友请备注--来自博客<br>欢迎技术讨论及各种撩骚哈哈哈</h4>
+<h4 align = "center">个人微信号，添加好友请备注--来自博客</h4>
 <img src="https://ooo.0o0.ooo/2017/05/17/591c5c682bddd.jpg" width="200" height="200">
