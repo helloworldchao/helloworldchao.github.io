@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Android6.0权限请求"
+title:  "Android6.0权限请求--第一行代码笔记"
 date:   2016-05-08 14:25:00 +0800
-categories: Android
+categories: Android Note
 permalink: /archivers/RequestingPermissionsAtRunTime
 ---
 

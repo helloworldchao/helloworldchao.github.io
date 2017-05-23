@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Broadcast使用解析"
+title:  "Broadcast使用解析--第一行代码笔记"
 date:   2016-05-14 22:40:00 +0800
-categories: Android
+categories: Android Note
 permalink: /archivers/Broadcast
 ---
 

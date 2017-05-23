@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "应用弹窗悬浮权限在Android6.0上的申请方式"
+title:  "应用弹窗悬浮权限在Android6.0上的申请方式--第一行代码笔记"
 date:   2016-04-28 21:15:00 +0800
-categories: Android
+categories: Android Note
 permalink: /archivers/HowToApplyDrawOverPermissionInAndroidM
 ---
 
