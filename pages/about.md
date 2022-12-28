@@ -6,7 +6,7 @@ public: true
 ---
 ### 关于我
 
-* Android/Frontend Developer
+* Android/Frontend/Backend/... Developer
 * 对一切新鲜的技术保持兴趣，爱折腾
 
 ### 留言板

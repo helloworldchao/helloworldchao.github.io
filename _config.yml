@@ -13,7 +13,7 @@ profile: Android/Frontend Developer
 github_username:  helloworldchao
 
 #来必力评论系统不注释即激活
-livere: true
+livere: false
 
 permalink: /archivers/:title
 gems:
