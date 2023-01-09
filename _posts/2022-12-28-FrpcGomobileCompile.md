@@ -56,74 +56,74 @@ gomobile version unknown: mobile repo git log failed: exit status 128, fatal: no
 
 1. 打开 GOPATH/src/github.com/fatedier/frp 源码。
 2. 修改 GOPATH/src/github.com/fatedier/frp/cmd/frpc/sub/root.go，将小写的 runClient 修改为 RunClient。
-3. 修改 GOPATH/src/github.com/fatedier/frp/cmd/frpc/main.go，将
+3. 修改 GOPATH/src/github.com/fatedier/frp/cmd/frpc/main.go
 
-先将
-```go
-package main
-```
+	先将
+	```go
+	package main
+	```
 
-修改为
+	修改为
 
-```go
-package frpc
-```
+	```go
+	package frpc
+	```
 
-后将
-```go
-func main() {
-	sub.Execute()
-}
-```
+	后将
+	```go
+	func main() {
+		sub.Execute()
+	}
+	```
 
-修改为
+	修改为
 
-```go
-func Run(cfgFilePath string) {
-	sub.RunClient(cfgFilePath)
-}
-```
+	```go
+	func Run(cfgFilePath string) {
+		sub.RunClient(cfgFilePath)
+	}
+	```
 
-其他方法可熟悉后自行添加，例如我添加了获取版本的方法，完整示例如下
-```go
+	其他方法可熟悉后自行添加，例如我添加了获取版本的方法，完整示例如下
+	```go
 
-package frpc
+	package frpc
 
-import (
-	_ "github.com/fatedier/frp/assets/frpc"
-	"github.com/fatedier/frp/cmd/frpc/sub"
-	"github.com/fatedier/frp/pkg/util/version"
-)
+	import (
+		_ "github.com/fatedier/frp/assets/frpc"
+		"github.com/fatedier/frp/cmd/frpc/sub"
+		"github.com/fatedier/frp/pkg/util/version"
+	)
 
-func Run(cfgFilePath string) {
-	sub.RunClient(cfgFilePath)
-}
+	func Run(cfgFilePath string) {
+		sub.RunClient(cfgFilePath)
+	}
 
-func GetVersion() string {
-	return version.Full()
-}
+	func GetVersion() string {
+		return version.Full()
+	}
 
-```
+	```
 
-原始版本如下
-```go
-package main
+	原始版本如下
+	```go
+	package main
 
-import (
-	_ "github.com/fatedier/frp/assets/frpc"
-	"github.com/fatedier/frp/cmd/frpc/sub"
-)
+	import (
+		_ "github.com/fatedier/frp/assets/frpc"
+		"github.com/fatedier/frp/cmd/frpc/sub"
+	)
 
-func main() {
-	sub.Execute()
-}
-```
+	func main() {
+		sub.Execute()
+	}
+	```
 
-最后执行编译命令，若没有报错则代表成功
+	最后执行编译命令，若没有报错则代表成功
 
-```bash
-gomobile bind -target=android github.com/fatedier/frp/cmd/frpc
-```
+	```bash
+	gomobile bind -target=android github.com/fatedier/frp/cmd/frpc
+	```
 
 # 参考项目
 
