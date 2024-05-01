@@ -65,7 +65,7 @@ ldconfig
 openssl version
 ```
 
-## 升级 OpenSSh
+## 升级 OpenSSH
 
 ### 备份文件
 

@@ -14,7 +14,7 @@ permalink: /archivers/LinuxHardDiskPartition
 
 1. 查看硬盘信息 `fdisk -l`  
 
-2. 创建新分区
+2. 创建新分区 `fdisk /dev/vda`
     - 输入n添加新分区
     - 输入p选择分区类型（默认回车就是p）
     - 选择分区号，一般1-4，默认的就行
